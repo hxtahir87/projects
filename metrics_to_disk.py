@@ -4,9 +4,9 @@ import time
 # Create a file response.txt in the same directory as this file
 # Make sure the token has Direct Ingest permission
 # Adjust the number of metrics by adjusting the 'metricNumber' below
-token = "89fe74ef-d645-4b53-b104-2ef8775a31dc"
+token = "<your_wavefront_token>"
 metricNumber = 2628288
-myUrl = "https://intuit.wavefront.com/api/spy/points"
+myUrl = "https://<url>.wavefront.com/api/spy/points"
 head = {'Authorization': 'Bearer {}'.format(token)}
 response = requests.get(myUrl, headers=head, stream = True)
 count = 0
